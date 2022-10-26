@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Informasi\DoaController;
 use App\Http\Controllers\Informasi\SurahController;
 use Illuminate\Support\Facades\Route;
 
@@ -29,4 +30,5 @@ Route::middleware([
     // INFORMASI
     Route::get('/informasi', [HomeController::class,'informasi']);
     Route::resource('informasisurah',SurahController::class);
+    Route::resource('informasidoa',DoaController::class);
 });

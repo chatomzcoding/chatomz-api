@@ -8,22 +8,18 @@
                         <thead>
                             <tr>
                                 <th>No</th>
-                                <th>Nama Surah</th>
-                                <th>Nama Arti</th>
-                                <th>Keterangan</th>
-                                <th>Audio</th>
+                                <th>Nama</th>
+                                <th>Ayat</th>
+                                <th>Arti</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($surah as $item)
+                            @foreach ($doa as $item)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $item->nama }} <br> {{ $item->asma }} <br>{{ $item->type }} <br>{{ $item->ayat }} Ayat</td>
+                                    <td>{{ $item->nama }}</td>
+                                    <td>{{ $item->ayat }} <br> {{ $item->latin }}</td>
                                     <td>{{ $item->arti }}</td>
-                                    <td>{!! $item->keterangan !!}</td>
-                                    <td>
-                                        <a href="{{ $item->audio }}" target="_blank" class="btn btn-label-info btn-sm btn-icon"><i class="bi-play"></i></a>
-                                    </td>
                                 </tr>
                             @endforeach
                         </tbody>
