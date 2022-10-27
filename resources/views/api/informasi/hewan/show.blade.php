@@ -1,5 +1,5 @@
 <x-frest-layout title="Informasi Hewan" menu="informasi">
-    <x-navbar kembali="informasi"></x-navbar>
+    <x-navbar kembali="informasihewan"></x-navbar>
     <div class="row">
         <div class="col-md-12">
             <div class="card">
@@ -11,17 +11,15 @@
                                 <th>Gambar</th>
                                 <th>Nama</th>
                                 <th>Keterangan</th>
-                                <th>Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($hewan as $item)
+                            @foreach ($informasihewan->informasihewanlist as $item)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
                                     <td><img src="{{ asset('img/informasi/hewan/'.$item->gambar) }}" alt="hewan" width="120px"></td>
                                     <td>{{ $item->nama }} <br> {{ $item->nama_latin }}</td>
                                     <td>{{ $item->keterangan }}</td>
-                                    <td><a href="{{ url('informasihewan/'.$item->id) }}" class="btn btn-primary btn-sm w-100">detail</a></td>
                                 </tr>
                             @endforeach
                         </tbody>

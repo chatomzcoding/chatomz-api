@@ -12,4 +12,9 @@ class Informasihewan extends Model
     protected $table = 'informasi_hewan';
 
     protected $guarded = [];
+
+    function informasihewanlist()
+    {
+        return $this->hasMany(Informasihewanlist::class);
+    }
 }

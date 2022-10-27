@@ -11,7 +11,6 @@
                                 <th>Gambar</th>
                                 <th>Nama</th>
                                 <th>Keterangan</th>
-                                <th>Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -21,7 +20,6 @@
                                     <td><img src="{{ asset('img/informasi/hewan/'.$item->gambar) }}" alt="hewan" width="120px"></td>
                                     <td>{{ $item->nama }} <br> {{ $item->nama_latin }}</td>
                                     <td>{{ $item->keterangan }}</td>
-                                    <td><a href="{{ url('informasihewan/'.$item->id) }}" class="btn btn-primary btn-sm w-100">detail</a></td>
                                 </tr>
                             @endforeach
                         </tbody>
