@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Informasi;
 use App\Http\Controllers\Controller;
 use App\Models\Informasihewan;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 class HewanController extends Controller
 {
@@ -27,7 +29,19 @@ class HewanController extends Controller
      */
     public function create()
     {
-        //
+        // $hewan = DB::table('informasi')->where('kategori_id',3)->get();
+        // foreach ($hewan as $key) {
+        //     $detail     = json_decode($key->detail);
+        //     Informasihewan::create([
+        //         'nama' => $key->nama,
+        //         'nama_latin' => $detail->nama_latin,
+        //         'slug' => Str::slug($key->nama),
+        //         'gambar' => $key->gambar,
+        //         'keterangan' => $detail->tentang,
+        //     ]);
+        // }
+
+        // return redirect('informasihewan');
     }
 
     /**
