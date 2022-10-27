@@ -45,7 +45,7 @@
     <!-- Vendor -->
     <link rel="stylesheet" href="{{ asset('template/frest/assets/vendor/libs/formvalidation/dist/css/formValidation.min.css')}}" />
 
-    <!-- Page CSS -->k
+    <!-- Page CSS -->
     <!-- Page -->
     <link rel="stylesheet" href="{{ asset('template/frest/assets/vendor/css/pages/page-auth.css')}}" />
     <!-- Helpers -->
