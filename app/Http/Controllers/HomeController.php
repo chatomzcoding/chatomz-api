@@ -55,6 +55,13 @@ class HomeController extends Controller
                 'gambar' => 'masakan.jpeg',
                 'keterangan' => 'Daftar Resep Masakan',
                 'kategori' => 'KEHIDUPAN',
+            ],
+            [
+                'link' => 'informasiphone',
+                'nama' => 'Phone',
+                'gambar' => 'phone.png',
+                'keterangan' => 'Daftar Merk Phone',
+                'kategori' => 'KEHIDUPAN',
             ]
         ];
         return view('api.informasi.index', compact('informasi'));
