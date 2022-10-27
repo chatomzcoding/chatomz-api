@@ -6,6 +6,7 @@ use App\Http\Controllers\Informasi\FilmController;
 use App\Http\Controllers\Informasi\GunungController;
 use App\Http\Controllers\Informasi\HewanController;
 use App\Http\Controllers\Informasi\HewanlistController;
+use App\Http\Controllers\Informasi\MasakanController;
 use App\Http\Controllers\Informasi\SurahController;
 use Illuminate\Support\Facades\Route;
 
@@ -39,4 +40,5 @@ Route::middleware([
     Route::resource('informasihewan',HewanController::class);
     Route::resource('informasihewanlist',HewanlistController::class);
     Route::resource('informasifilm',FilmController::class);
+    Route::resource('informasimasakan',MasakanController::class);
 });

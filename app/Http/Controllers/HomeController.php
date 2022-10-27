@@ -48,6 +48,13 @@ class HomeController extends Controller
                 'gambar' => 'film.jpg',
                 'keterangan' => 'Daftar Film',
                 'kategori' => 'HIBURAN',
+            ],
+            [
+                'link' => 'informasimasakan',
+                'nama' => 'Resep Masakan',
+                'gambar' => 'masakan.jpeg',
+                'keterangan' => 'Daftar Resep Masakan',
+                'kategori' => 'KEHIDUPAN',
             ]
         ];
         return view('api.informasi.index', compact('informasi'));
