@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Informasi\DoaController;
+use App\Http\Controllers\Informasi\FilmController;
 use App\Http\Controllers\Informasi\GunungController;
 use App\Http\Controllers\Informasi\HewanController;
 use App\Http\Controllers\Informasi\HewanlistController;
@@ -37,4 +38,5 @@ Route::middleware([
     Route::resource('informasigunung',GunungController::class);
     Route::resource('informasihewan',HewanController::class);
     Route::resource('informasihewanlist',HewanlistController::class);
+    Route::resource('informasifilm',FilmController::class);
 });

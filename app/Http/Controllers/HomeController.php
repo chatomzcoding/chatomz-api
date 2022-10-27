@@ -41,6 +41,13 @@ class HomeController extends Controller
                 'gambar' => 'hewan.jpg',
                 'keterangan' => 'Daftar Hewan',
                 'kategori' => 'PENGETAHUAN',
+            ],
+            [
+                'link' => 'informasifilm',
+                'nama' => 'Dunia Film',
+                'gambar' => 'film.jpg',
+                'keterangan' => 'Daftar Film',
+                'kategori' => 'HIBURAN',
             ]
         ];
         return view('api.informasi.index', compact('informasi'));
