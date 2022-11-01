@@ -118,7 +118,7 @@
                   <!--/ Style Switcher -->
 
                   <!-- Quick links  -->
-                  <li class="nav-item dropdown-shortcuts navbar-dropdown dropdown me-2 me-xl-0">
+                  {{-- <li class="nav-item dropdown-shortcuts navbar-dropdown dropdown me-2 me-xl-0">
                     <a
                       class="nav-link dropdown-toggle hide-arrow"
                       href="javascript:void(0);"
@@ -209,7 +209,7 @@
                         </div>
                       </div>
                     </div>
-                  </li>
+                  </li> --}}
                   <!-- Quick links -->
 
                   <!-- Notification -->
@@ -534,6 +534,8 @@
           toastr.warning("{{ session('tw') }}");
       @endif
     </script>
+
+    <script src="{{ asset('template/frest/assets/js/main.js')}}"></script>
 
     <script src="{{ asset('template/frest/assets/js/dashboards-analytics.js')}}"></script>
     <script src="{{ asset('template/frest/assets/vendor/libs/block-ui/block-ui.js')}}"></script>
