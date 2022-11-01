@@ -7,7 +7,7 @@
                   <div class="d-flex align-items-center mb-3">
                     <a href="{{ url($item['link']) }}" class="d-flex align-items-center">
                       <div class="avatar avatar-sm me-2">
-                        <img src="{{ asset('img/informasi/'.$item['gambar']) }}" alt="Avatar" class="rounded-circle"/>
+                        <img src="{{ $item['gambar']}}" alt="Avatar" class="rounded-circle"/>
                       </div>
                       <div class="me-2 text-body h5 mb-0">{{ $item['nama'] }}</div>
                     </a>

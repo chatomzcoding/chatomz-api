@@ -107,4 +107,17 @@ class GetinformasiController extends Controller
             'message' => 'tidak ditemukan'
         ]);
     }
+
+    public function listinformasi()
+    {
+        if (isset($_GET['token'])) {
+            if (cekToken($_GET['token'])) {
+                return dataInformasi();
+            }
+        }
+        return response()->json([
+            'code' => '404',
+            'message' => 'tidak ditemukan'
+        ]);
+    }
 }

@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/informasi/{sesi}',[GetinformasiController::class,'index']);
+Route::get('/listinformasi',[GetinformasiController::class,'listinformasi']);
