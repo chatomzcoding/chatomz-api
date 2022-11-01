@@ -3,7 +3,7 @@
 function dataInformasi()
 {
     $informasi = [
-        [
+        1 => [
             'link' => 'informasisurah',
             'nama' => 'Surah Al-quran',
             'gambar' => asset('img/informasi/alquran.png'),
@@ -11,7 +11,7 @@ function dataInformasi()
             'kategori' => 'ISLAM',
             'label' => 'surah'
         ],
-        [
+        2 => [
             'link' => 'informasidoa',
             'nama' => 'Doa - doa',
             'gambar' => asset('img/informasi/doa.jpg'),
@@ -19,7 +19,7 @@ function dataInformasi()
             'kategori' => 'ISLAM',
             'label' => 'doa'
         ],
-        [
+        3 => [
             'link' => 'informasigunung',
             'nama' => 'Gunung',
             'gambar' => asset('img/informasi/gunung.jpg'),
@@ -27,7 +27,7 @@ function dataInformasi()
             'kategori' => 'PENGETAHUAN',
             'label' => 'gunung'
         ],
-        [
+        4 => [
             'link' => 'informasihewan',
             'nama' => 'Dunia Hewan',
             'gambar' => asset('img/informasi/hewan.jpg'),
@@ -35,7 +35,7 @@ function dataInformasi()
             'kategori' => 'PENGETAHUAN',
             'label' => 'hewan'
         ],
-        [
+        5 => [
             'link' => 'informasifilm',
             'nama' => 'Dunia Film',
             'gambar' => asset('img/informasi/film.jpg'),
@@ -43,7 +43,7 @@ function dataInformasi()
             'kategori' => 'HIBURAN',
             'label' => 'film'
         ],
-        [
+        6 => [
             'link' => 'informasimasakan',
             'nama' => 'Resep Masakan',
             'gambar' => asset('img/informasi/masakan.jpeg'),
@@ -51,7 +51,7 @@ function dataInformasi()
             'kategori' => 'KEHIDUPAN',
             'label' => 'masakan'
         ],
-        [
+        7 => [
             'link' => 'informasiphone',
             'nama' => 'Phone',
             'gambar' => asset('img/informasi/phone.png'),
