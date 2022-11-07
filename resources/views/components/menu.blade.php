@@ -29,6 +29,12 @@
             <div data-i18n="Informasi">Informasi</div>
         </a>
       </li>
+      <li class="menu-item {{ menuAktif('data',$menuaktif) }}">
+        <a href="{{ url('data') }}" class='menu-link'>
+            <i class="menu-icon tf-icons bx bxs-data"></i>
+            <div data-i18n="Pusat Data">Pusat Data</div>
+        </a>
+      </li>
       {{-- <li class="menu-item {{ fMenuAktif($menuaktif,['dashboard']) }}">
         <a href="javascript:void(0);" class="menu-link menu-toggle">
           <i class="menu-icon tf-icons bx bx-home-circle"></i>

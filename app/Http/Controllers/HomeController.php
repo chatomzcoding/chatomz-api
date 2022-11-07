@@ -16,4 +16,10 @@ class HomeController extends Controller
         $informasi = dataInformasi();
         return view('api.informasi.index', compact('informasi'));
     }
+
+    public function data()
+    {
+        $data = dataPusat();
+        return view('api.data.index', compact('data'));
+    }
 }

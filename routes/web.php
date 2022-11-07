@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\Data\Daerah\DesaController;
+use App\Http\Controllers\Data\Daerah\KecamatanController;
+use App\Http\Controllers\Data\Daerah\KotaController;
+use App\Http\Controllers\Data\Daerah\ProvinsiController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Informasi\DoaController;
 use App\Http\Controllers\Informasi\FilmController;
@@ -43,4 +47,11 @@ Route::middleware([
     Route::resource('informasifilm',FilmController::class);
     Route::resource('informasimasakan',MasakanController::class);
     Route::resource('informasiphone',PhoneController::class);
+    
+    // DATA
+    Route::get('/data', [HomeController::class,'data']);
+    Route::resource('dataprovinsi',ProvinsiController::class);
+    Route::resource('datakota',KotaController::class);
+    Route::resource('datakecamatan',KecamatanController::class);
+    Route::resource('datadesa',DesaController::class);
 });

@@ -63,3 +63,18 @@ function dataInformasi()
 
     return $informasi;
 }
+
+function dataPusat()
+{
+    $data = [
+        1 => [
+            'link' => 'dataprovinsi',
+            'nama' => 'API Daerah Indonesia',
+            'gambar' => asset('img/data/daerah.png'),
+            'keterangan' => 'Daftar Nama Daerah di Indonesia',
+            'kategori' => 'indonesia',
+            'label' => 'daerah'
+        ]
+    ];
+    return $data;
+}
