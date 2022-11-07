@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\Data\DaerahindonesiaController;
 use App\Http\Controllers\Api\GetinformasiController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -21,3 +22,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('/informasi/{sesi}',[GetinformasiController::class,'index']);
 Route::get('/listinformasi',[GetinformasiController::class,'listinformasi']);
+
+// PUSAT DATA
+
+Route::get('/data/daerahindonesia/{sesi}',[DaerahindonesiaController::class,'index']);
